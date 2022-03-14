@@ -7,9 +7,9 @@ using namespace std;
 
 class Cheques : public Cuenta
 {
-public:
-	int cantidadCheques;
 private:
+	int cantidadCheques;
+public:
 	Cheques();
 	Cheques(string, int, double, int);
 	~Cheques();

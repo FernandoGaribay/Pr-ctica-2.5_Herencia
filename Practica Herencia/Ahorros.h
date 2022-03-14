@@ -8,10 +8,10 @@ using namespace std;
 
 class Ahorros : public Cuenta
 {
-public:
+private:
 	double tasaIntereses;
 	int periodo;
-private:
+public:
 	Ahorros();
 	Ahorros(string, int, double, double, int);
 	~Ahorros();
