@@ -22,6 +22,7 @@ void Cuenta::retirar(double cantidad) {
 	setSaldo(getSaldo() - cantidad);
 }
 
+
 void Cuenta::setTitular(string titular) {
 	this->titular = titular;
 }
