@@ -15,5 +15,9 @@ int main()
     objAhorros.calcularIntereses();
     cout << objAhorros.getSaldo();
 
+    cout << "objCheques : girarCheque(); = ";
+    objCheques.girarCheque(10);
+    objCheques.getSaldo();
+
     return 0;
 }
