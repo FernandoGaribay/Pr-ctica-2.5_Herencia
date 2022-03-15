@@ -22,7 +22,7 @@ void Ahorros::calcularIntereses() {
 	double tasaIntereses = getTasaIntereses();
 	int periodo = getPeriodo();
 
-	setSaldo(saldo + tasaIntereses * periodo);
+	setSaldo(saldo + tasaIntereses * (tiempo / periodo);
 }
 
 
@@ -38,4 +38,11 @@ void Ahorros::setPeriodo(int periodo) {
 }
 int Ahorros::getPeriodo() {
 	return periodo;
+}
+
+void Ahorros::setTiempo(int tiempo) {
+	this->tiempo = tiempo;
+}
+int Ahorros::getTiempo() {
+	return tiempo;
 }

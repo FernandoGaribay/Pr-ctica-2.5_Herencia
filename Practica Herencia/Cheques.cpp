@@ -16,7 +16,7 @@ Cheques::~Cheques() {}
 
 
 void Cheques::girarCheque(int cantidad) {
-	setCantidadCheques(getCantidadCheques() - cantidad);
+	setCantidadCheques(getCantidadCheques() + 1);
 	setSaldo(getSaldo() - cantidad);
 }
 

@@ -11,6 +11,7 @@ class Ahorros : public Cuenta
 private:
 	double tasaIntereses;
 	int periodo;
+	int tiempo;
 public:
 	Ahorros();
 	Ahorros(string, int, double, double, int);
@@ -20,5 +21,7 @@ public:
 	double getTasaIntereses();
 	void setPeriodo(int);
 	int getPeriodo();
+	void setTiempo(int);
+	int getTiempo();
 };
 
