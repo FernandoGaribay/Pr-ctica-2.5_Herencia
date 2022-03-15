@@ -22,7 +22,7 @@ void Ahorros::calcularIntereses() {
 	double tasaIntereses = getTasaIntereses();
 	int periodo = getPeriodo();
 
-	setSaldo(saldo + tasaIntereses * (tiempo / periodo);
+	setSaldo(saldo + tasaIntereses * (tiempo / periodo));
 }
 
 
