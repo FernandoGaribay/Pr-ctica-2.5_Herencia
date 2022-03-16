@@ -7,22 +7,21 @@ using namespace std;
 Ahorros::Ahorros() {
 	this->tasaIntereses = 0;
 	this->periodo = 0;
+	this->tiempo = 0;
 }
 
 Ahorros::Ahorros(string titular, int numero, double saldo, double tasaInteres, int periodo) : Cuenta(titular, numero, saldo) {
 	this->tasaIntereses = tasaInteres;
 	this->periodo = periodo;
+	this->tiempo = 0;
 }
 
 Ahorros::~Ahorros() {}
 
 
 void Ahorros::calcularIntereses() {
-	double saldo = getSaldo();
-	double tasaIntereses = getTasaIntereses();
-	int periodo = getPeriodo();
-
-	setSaldo(saldo + tasaIntereses * (tiempo / periodo));
+	//setSaldo(getSaldo() + (getTasaIntereses() * (getPeriodo() / getTiempo())));
+	setSaldo(getSaldo() * getTasaIntereses() * getPeriodo()); // https://blog.nubox.com/contadores/tasa-de-interes
 }
 
 
