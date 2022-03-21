@@ -23,6 +23,5 @@ public:
 	int getPeriodo();
 	void setTiempo(int);
 	int getTiempo();
-
 };
 

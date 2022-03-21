@@ -20,8 +20,7 @@ Ahorros::~Ahorros() {}
 
 
 void Ahorros::calcularIntereses() {
-	//setSaldo(getSaldo() + (getTasaIntereses() * (getPeriodo() / getTiempo())));
-	setSaldo(getSaldo() * getTasaIntereses() * getPeriodo()); // https://blog.nubox.com/contadores/tasa-de-interes
+	setSaldo(getSaldo() * getTasaIntereses() * getPeriodo());
 }
 
 

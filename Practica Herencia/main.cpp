@@ -27,9 +27,10 @@ int main()
     cout << "Cantidad de cheques: " << objCheques.getCantidadCheques() << endl;
     cout << "Saldo antes del cheque: "<< objCheques.getSaldo() << endl;
 
-    objCheques.girarCheque(100);
+    objCheques.girarCheque(100); // $100 pesos de cheque
     cout << "\nCantidad de cheques: " << objCheques.getCantidadCheques() << endl;
     cout << "Saldo despues del cheque: " << objCheques.getSaldo();
 
+    cout << "\n\n\n\n\n";
     return 0;
 }
