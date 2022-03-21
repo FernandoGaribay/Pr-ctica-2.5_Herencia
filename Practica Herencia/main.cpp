@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
     // titular, numero, saldo, tasaInteres, periodo
-    Ahorros objAhorros("Fernando", 21310414, 100, 0.10, 60);
+    Ahorros objAhorros("Fernando", 21310414, 100, 0.10, 30);
 
     // titular, numero, saldo, cantidadCheques
     Cheques objCheques("Ivan", 21310418, 200, 10);
@@ -17,9 +17,9 @@ int main()
     cout << "objAhorros : calcularIntereses();" << endl;
     cout << "Saldo sin intereses: " << objAhorros.getSaldo() << endl;
 
-    objAhorros.setTiempo(30); // Se establece un tiempo de 30 dias.
+    objAhorros.setTiempo(90); // Se establece un tiempo de 60 dias.
     objAhorros.calcularIntereses();
-    cout << "Saldo con intereses: " << objAhorros.getSaldo();
+    cout << "Saldo con intereses: " << objAhorros.getSaldo(); // 10% cada 30 dias
 
 
     cout << "\n\nobjCheques : girarCheque(100);" << endl;

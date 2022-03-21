@@ -20,7 +20,7 @@ Ahorros::~Ahorros() {}
 
 
 void Ahorros::calcularIntereses() {
-	setSaldo(getSaldo() * getTasaIntereses() * getPeriodo());
+	setSaldo(getSaldo() + getSaldo() * getTasaIntereses() * (getTiempo() / getPeriodo()));
 }
 
 
