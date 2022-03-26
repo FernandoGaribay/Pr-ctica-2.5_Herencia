@@ -21,7 +21,11 @@ void Cuenta::depositar(double cantidad) {
 void Cuenta::retirar(double cantidad) {
 	setSaldo(getSaldo() - cantidad);
 }
-
+void Cuenta::mostrar() {
+	cout << "Nombre del titular: " << getTitular() << endl;
+	cout << "Numero de cuenta: " << getNumero() << endl;
+	cout << "Saldo de la cuenta: " << getSaldo() << endl;
+}
 
 void Cuenta::setTitular(string titular) {
 	this->titular = titular;

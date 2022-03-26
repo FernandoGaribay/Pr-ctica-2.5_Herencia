@@ -19,6 +19,10 @@ void Cheques::girarCheque(int cantidad) {
 	setCantidadCheques(getCantidadCheques() - 1);
 	setSaldo(getSaldo() - cantidad);
 }
+void Cheques::mostrarDatos() {
+	mostrar();
+	cout << "Cantidad de cheques: " << getCantidadCheques() << endl;
+}
 
 
 void Cheques::setCantidadCheques(int cantidad) {

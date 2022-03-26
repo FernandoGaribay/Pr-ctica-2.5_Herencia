@@ -22,5 +22,5 @@ public:
 	double getSaldo();
 	void setNumero(int);
 	int getNumero();
+	void mostrar();
 };
-

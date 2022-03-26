@@ -16,5 +16,5 @@ public:
 	void setCantidadCheques(int);
 	int getCantidadCheques();
 	void girarCheque(int);
+	void mostrarDatos();
 };
-
