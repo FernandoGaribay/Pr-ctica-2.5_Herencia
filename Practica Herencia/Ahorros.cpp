@@ -6,7 +6,6 @@ using namespace std;
 
 Ahorros::Ahorros() {
 	this->tasaIntereses = 0;
-	this-> intereses = 0;
 	this->periodo = 0;
 	this->tiempo = 0;
 }
@@ -21,26 +20,15 @@ Ahorros::~Ahorros() {}
 
 
 void Ahorros::calcularIntereses() {
-	setIntereses(getSaldo() * getTasaIntereses() * (getTiempo() / getPeriodo()));
-}
-void Ahorros::mostrarDatos() {
-	mostrar();
-	cout << "Cantidad de interes: " << getIntereses() << endl;
+	setSaldo(getSaldo() + getSaldo() * getTasaIntereses() * (getTiempo() / getPeriodo()));
 }
 
 
 void Ahorros::setTasaIntereses(double tasa) {
 	this->tasaIntereses = tasa;
 }
-void Ahorros::setIntereses(double intereses) {
-	this->intereses = intereses;
-}
-
 double Ahorros::getTasaIntereses() {
 	return tasaIntereses;
-}
-double Ahorros::getIntereses() {
-	return intereses;
 }
 
 void Ahorros::setPeriodo(int periodo) {

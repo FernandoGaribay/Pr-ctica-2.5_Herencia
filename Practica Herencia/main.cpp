@@ -17,9 +17,9 @@ int main()
     cout << "objAhorros : calcularIntereses();" << endl;
     cout << "Saldo sin intereses: " << objAhorros.getSaldo() << endl;
 
-    objAhorros.setTiempo(60); // Se establece un tiempo de 60 dias.
+    objAhorros.setTiempo(90); // Se establece un tiempo de 60 dias.
     objAhorros.calcularIntereses();
-    cout << "Saldo con intereses: " << objAhorros.getSaldo() + objAhorros.getIntereses(); // 10% cada 30 dias
+    cout << "Saldo con intereses: " << objAhorros.getSaldo(); // 10% cada 30 dias
 
 
     cout << "\n\nobjCheques : girarCheque(100);" << endl;
@@ -29,14 +29,8 @@ int main()
 
     objCheques.girarCheque(100); // $100 pesos de cheque
     cout << "\nCantidad de cheques: " << objCheques.getCantidadCheques() << endl;
-    cout << "Saldo despues del cheque: " << objCheques.getSaldo() << endl;
+    cout << "Saldo despues del cheque: " << objCheques.getSaldo();
 
-    cout << "\n\nobjCheques : mostrarDatos()\n" << endl;
-    objCheques.mostrarDatos();
-
-    cout << "\nobjAhorros : mostrarDatos()\n" << endl;
-    objAhorros.mostrarDatos();
-
-    cout << "\n";
+    cout << "\n\n\n\n\n";
     return 0;
 }
